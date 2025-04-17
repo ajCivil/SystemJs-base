@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script type="systemjs-importmap">
+    {
+      "imports": {
+        "react": "https://cdn.bootcdn.net/ajax/libs/react/18.2.0/umd/react.development.js",
+        "react-dom": "https://cdn.bootcdn.net/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+  <!-- <script src="https://cdn.bootcdn.net/ajax/libs/systemjs/6.10.1/system.min.js"></script> -->
+   <script src="./ajSystemJs.js"></script>
+  <script>
+    // System.import('./index.js')
+    ajSystem.import('./index.js');
+  </script>
+</body>
+</html>
