@@ -3,6 +3,11 @@
 // 2. react/ react-dom 加载后调用setters，将对应的结果赋值给webpack
 // 3. 执行execute
 
+/**
+ * 本质就是先加载依赖列表， 再去加载真正的逻辑
+ * 内部通过script脚本加载资源，给window拍照保存先后状态
+ */
+
 class ajSystemJs {
 
   constructor(){
